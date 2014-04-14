@@ -1,0 +1,21 @@
+#include <iostream.h>
+#include <cctype>
+
+using namespace std;
+
+char* binary(int number,int length) {
+     int remainder;
+     int i = length - 1
+     if(number <= 1)
+     cout << number;
+     remainder = number % 2;
+     binary(number >> 1);
+     cout << remainder;
+}
+
+int main()
+{
+	int n=5;
+
+	cout <<	bitset<8>(n);
+}

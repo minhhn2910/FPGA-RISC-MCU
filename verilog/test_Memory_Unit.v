@@ -1,0 +1,28 @@
+module test_Memory_Unit ();
+ parameter word_size = 10;
+  parameter memory_size = 256;
+  parameter address_size = 8;
+  wire [word_size-1: 0] data_out;
+  reg [word_size-1: 0] data_in;
+  reg [address_size-1: 0] address;
+  reg clk, write;
+  
+	Memory_Unit mem1(data_out, data_in, address, clk, write);
+	
+initial
+	begin
+		clk = 0;
+	end
+always #5 clk = ~clk;
+	 
+  initial
+  begin
+	
+	#35		address = 0 ; data_in= 10'b01010_10101; 
+	#35		address = 1 ; write = 1;
+	#35		data_in = 10'b011_0001111;   
+	#35		data_in= 10'b100_0000011; //store to address = 3
+	#35		address = 4; write = 0;
+	#35		address = 5; write = 1;	data_in = 10'b11_0010_0000 ;  //save 32 to r0
+  end
+endmodule

@@ -1,0 +1,45 @@
+ 
+ module RISC_SPM (clk, rst,R0_out, R1_out, R2_out, R3_out,PC_count,instruction,zero,state,next_state,PORT,en_PORT);
+  parameter word_size = 10;
+  parameter data_size = 8;
+  parameter address_size = 8;
+  parameter Sel1_size = 3;
+  parameter Sel2_size = 3;
+  wire [Sel1_size-1: 0] Sel_Bus_1a_Mux,Sel_Bus_1b_Mux;
+  wire [Sel2_size-1: 0] Sel_Bus_2_Mux;
+  input clk, rst;
+
+  output [data_size-1: 0] R0_out, R1_out, R2_out, R3_out;
+  output [data_size-1: 0] PC_count;
+  wire [word_size-1: 0] mem_word;
+  output [3:0] state,next_state;
+  // Data Nets
+  output zero;		//for test, need back to wire
+  output [word_size-1: 0] instruction;
+  wire [data_size-1: 0] Bus_1a,Bus_1b ;
+// Control Nets
+  wire Load_R0, Load_R1, Load_R2, Load_R3, Load_PC, Inc_PC, Load_IR;   
+  wire Load_Add_R,  Load_Reg_Z;
+  wire write;
+  wire [address_size:0] address_decoded, address;
+  wire [data_size:0] constant_decoded;
+wire Sel_PORT ;
+ Processing_Unit M0_Processor (instruction, zero, address, address_decoded, constant_decoded, Bus_1a, Bus_1b, mem_word, Load_R0, Load_R1, Load_R2, Load_R3, Load_PC, Inc_PC, Sel_Bus_1a_Mux, Sel_Bus_1b_Mux, Load_IR,  Load_Add_R, Load_Reg_Z,  Sel_Bus_2_Mux, clk, rst,R0_out, R1_out, R2_out, R3_out,PC_count);
+
+Control_Unit M1_Controller (Load_R0, Load_R1, Load_R2, Load_R3,
+  Load_PC, Inc_PC, Sel_Bus_1a_Mux,Sel_Bus_1b_Mux, Sel_Bus_2_Mux , Load_IR,
+  Load_Add_R, Load_Reg_Z, write, address_decoded, constant_decoded, instruction, zero, 
+  clk, rst,state,next_state,Sel_PORT);
+ output reg [word_size -1: 0] PORT;
+always @ (posedge clk or negedge rst)
+begin
+    if (rst == 0) PORT <= 0; 
+	else if (Sel_PORT==1) PORT <= R0_out; 
+end
+//Memory_Unit M2_SRAM (.data_out(mem_word), .data_in({2'b0,Bus_1a}), .address(address), .clk(clk), .write(write) );
+
+//Memmory_BlockRAM M2(.address(address),.clock(clk),.data({2'b0,Bus_1a}),.wren(write),.q(mem_word));
+//programCode Me(.address(address),.clock(clk),.data({2'b0,Bus_1a}),.wren(write),.q(mem_word));
+	codeMem code1(.address(address),.clock(clk),.data({2'b0,Bus_1a}),.wren(write),.q(mem_word));
+endmodule
+

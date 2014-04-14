@@ -1,0 +1,17 @@
+﻿- Chương trình nguồn được lưu trên block RAM dưới dạng mã máy
+- CPU sẽ đọc tuần tự các mã lệnh này để thực thi (mã lệnh được mô tả bên dưới)
+- Cho phép hiển thị nội dung ô nhớ trong RAM ra led 7 đoạn (Advanced: Memory mapped IO)
+Mã lệnh và mô tả:
+0000 00 00 00 : op cộng, reg0(2bit), reg1(2bit), res(2bit)
+0001 00 00 00 : op trừ, reg0(2bit), reg1(2bit), res(2bit)
+0010 00 00 00 : op and, reg0(2bit), reg1(2bit), res(2bit)
+0011 00 00 00 : op or, reg0(2bit), reg1(2bit), res(2bit)
+0100 00 xx 00 : op not, reg0(2bit), res(2bit)
+0101 0x xxxx   : op skip if zero = 1
+0101 10 xxxx   : op nop
+0101 11 xxxx   : op halt
+
+011 0000000 : op relatively jump, address
+100 0000000 : op store data from R0 to Address
+101 0000000 : op load data frome Address to R0
+11 00000000 : op save Constant to R0 

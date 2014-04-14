@@ -1,0 +1,303 @@
+# Reading C:/altera/81/modelsim_ase/tcl/vsim/pref.tcl 
+# OpenFile {D:/dropbox/HDL Nhan Minh/project/test_bench.mpf} 
+# Loading project test_bench
+# Compile of Address_Register.v was successful.
+# Compile of Alu_RISC.v was successful.
+# Compile of Clock_Unit .v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of D_flop.v was successful.
+# Compile of decoderBCD.v was successful.
+# Compile of generator.v was successful.
+# Compile of Instruction_Register.v was successful.
+# Compile of Memmory_BlockRAM.v was successful.
+# Compile of Memory_Unit.v was successful.
+# Compile of Multiplexer_3ch.v was successful.
+# Compile of Multiplexer_5ch_8bit.v was successful.
+# Compile of Multiplexer_5ch_10bit.v was successful.
+# Compile of Processing_Unit.v was successful.
+# Compile of Program_Counter.v was successful.
+# Compile of quartus_project.v was successful.
+# Compile of Register_Unit.v was successful.
+# Compile of RISC_processor.v was successful.
+# Compile of RISC_SPM.v was successful.
+# Compile of test_ALU.v was successful.
+# Compile of test_Control_Unit.v was successful.
+# Compile of test_Memory_BlockRAM.v was successful.
+# Compile of test_Processing_Unit.v was successful.
+# Compile of test_RISC_SPM.v was successful.
+# 24 compiles, 0 failed with no errors. 
+vsim -voptargs=+acc work.test_ALU
+# vsim -voptargs=+acc work.test_ALU 
+# Loading work.test_ALU
+# Loading work.Alu_RISC
+# Updating msgviewer database...
+add wave -r /*
+run 400
+# ** Note: $finish    : D:/dropbox/HDL Nhan Minh/project/test_ALU.v(10)
+#    Time: 200 ps  Iteration: 0  Instance: /test_ALU
+# 1
+# Break in Module test_ALU at D:/dropbox/HDL Nhan Minh/project/test_ALU.v line 10
+# Updating msgviewer database...
+restart
+run 100
+# Updating msgviewer database...
+add wave \
+{sim:/test_ALU/a1/ADD } \
+{sim:/test_ALU/a1/SUB } \
+{sim:/test_ALU/a1/AND } \
+{sim:/test_ALU/a1/OR } \
+{sim:/test_ALU/a1/NOT } 
+restart
+run 90
+# Updating msgviewer database...
+vsim work.test_Control_Unit
+# vsim work.test_Control_Unit 
+# Loading work.test_Control_Unit
+# Loading work.Control_Unit
+# ** Warning: (vsim-3017) D:/dropbox/HDL Nhan Minh/project/test_Control_Unit.v(38): [TFMPC] - Too few port connections. Expected 21, found 19.
+#         Region: /test_Control_Unit/unit1
+# ** Warning: (vsim-3722) D:/dropbox/HDL Nhan Minh/project/test_Control_Unit.v(38): [TFMPC] - Missing connection for port 'state'.
+# ** Warning: (vsim-3722) D:/dropbox/HDL Nhan Minh/project/test_Control_Unit.v(38): [TFMPC] - Missing connection for port 'next_state'.
+# Updating msgviewer database...
+add wave \
+{sim:/test_Control_Unit/unit1/word_size } \
+{sim:/test_Control_Unit/unit1/op_size } \
+{sim:/test_Control_Unit/unit1/state_size } \
+{sim:/test_Control_Unit/unit1/address_size } \
+{sim:/test_Control_Unit/unit1/data_size } \
+{sim:/test_Control_Unit/unit1/src0_size } \
+{sim:/test_Control_Unit/unit1/src1_size } \
+{sim:/test_Control_Unit/unit1/dest_size } \
+{sim:/test_Control_Unit/unit1/Sel1_size } \
+{sim:/test_Control_Unit/unit1/Sel2_size } \
+{sim:/test_Control_Unit/unit1/S_idle } \
+{sim:/test_Control_Unit/unit1/S_fet1 } \
+{sim:/test_Control_Unit/unit1/S_fet2 } \
+{sim:/test_Control_Unit/unit1/S_fet3 } \
+{sim:/test_Control_Unit/unit1/S_dec } \
+{sim:/test_Control_Unit/unit1/S_ex1 } \
+{sim:/test_Control_Unit/unit1/S_rd1 } \
+{sim:/test_Control_Unit/unit1/S_wr1 } \
+{sim:/test_Control_Unit/unit1/S_siz1 } \
+{sim:/test_Control_Unit/unit1/S_siz2 } \
+{sim:/test_Control_Unit/unit1/S_jump1 } \
+{sim:/test_Control_Unit/unit1/S_jump2 } \
+{sim:/test_Control_Unit/unit1/S_wait } \
+{sim:/test_Control_Unit/unit1/S_br2 } \
+{sim:/test_Control_Unit/unit1/S_halt } \
+{sim:/test_Control_Unit/unit1/S_nop } \
+{sim:/test_Control_Unit/unit1/ADD } \
+{sim:/test_Control_Unit/unit1/SUB } \
+{sim:/test_Control_Unit/unit1/AND } \
+{sim:/test_Control_Unit/unit1/OR } \
+{sim:/test_Control_Unit/unit1/NOT } \
+{sim:/test_Control_Unit/unit1/SIZ } \
+{sim:/test_Control_Unit/unit1/NOP } \
+{sim:/test_Control_Unit/unit1/OP_5 } \
+{sim:/test_Control_Unit/unit1/JUMP } \
+{sim:/test_Control_Unit/unit1/STORE } \
+{sim:/test_Control_Unit/unit1/LOAD } \
+{sim:/test_Control_Unit/unit1/SAVE } \
+{sim:/test_Control_Unit/unit1/R0 } \
+{sim:/test_Control_Unit/unit1/R1 } \
+{sim:/test_Control_Unit/unit1/R2 } \
+{sim:/test_Control_Unit/unit1/R3 } \
+{sim:/test_Control_Unit/unit1/Load_R0 } \
+{sim:/test_Control_Unit/unit1/Load_R1 } \
+{sim:/test_Control_Unit/unit1/Load_R2 } \
+{sim:/test_Control_Unit/unit1/Load_R3 } \
+{sim:/test_Control_Unit/unit1/Load_PC } \
+{sim:/test_Control_Unit/unit1/Inc_PC } \
+{sim:/test_Control_Unit/unit1/Sel_Bus_1a_Mux } \
+{sim:/test_Control_Unit/unit1/Sel_Bus_1b_Mux } \
+{sim:/test_Control_Unit/unit1/Sel_Bus_2_Mux } \
+{sim:/test_Control_Unit/unit1/Load_IR } \
+{sim:/test_Control_Unit/unit1/Load_Add_R } \
+{sim:/test_Control_Unit/unit1/Load_Reg_Z } \
+{sim:/test_Control_Unit/unit1/write } \
+{sim:/test_Control_Unit/unit1/address_decoded } \
+{sim:/test_Control_Unit/unit1/constant_decoded } \
+{sim:/test_Control_Unit/unit1/instruction } \
+{sim:/test_Control_Unit/unit1/zero } \
+{sim:/test_Control_Unit/unit1/clk } \
+{sim:/test_Control_Unit/unit1/rst } \
+{sim:/test_Control_Unit/unit1/state } \
+{sim:/test_Control_Unit/unit1/next_state } \
+{sim:/test_Control_Unit/unit1/Sel_ALU } \
+{sim:/test_Control_Unit/unit1/Sel_Bus_1a } \
+{sim:/test_Control_Unit/unit1/Sel_Mem } \
+{sim:/test_Control_Unit/unit1/Sel_Address } \
+{sim:/test_Control_Unit/unit1/Sel_Constant } \
+{sim:/test_Control_Unit/unit1/Sel_R0a } \
+{sim:/test_Control_Unit/unit1/Sel_R1a } \
+{sim:/test_Control_Unit/unit1/Sel_R2a } \
+{sim:/test_Control_Unit/unit1/Sel_R3a } \
+{sim:/test_Control_Unit/unit1/Sel_PCa } \
+{sim:/test_Control_Unit/unit1/Sel_Ira } \
+{sim:/test_Control_Unit/unit1/Sel_R0b } \
+{sim:/test_Control_Unit/unit1/Sel_R1b } \
+{sim:/test_Control_Unit/unit1/Sel_R2b } \
+{sim:/test_Control_Unit/unit1/Sel_R3b } \
+{sim:/test_Control_Unit/unit1/Sel_PCb } \
+{sim:/test_Control_Unit/unit1/Sel_Irb } \
+{sim:/test_Control_Unit/unit1/err_flag } \
+{sim:/test_Control_Unit/unit1/opcode } \
+{sim:/test_Control_Unit/unit1/src1 } \
+{sim:/test_Control_Unit/unit1/src0 } \
+{sim:/test_Control_Unit/unit1/dest } 
+run 100
+# Updating msgviewer database...
+run 50
+# Updating msgviewer database...
+run 50
+# Updating msgviewer database...
+run 100
+# Updating msgviewer database...
+run 50
+# Updating msgviewer database...
+vsim work.test_Processing_Unit
+# vsim work.test_Processing_Unit 
+# Loading work.test_Processing_Unit
+# Loading work.Processing_Unit
+# Loading work.Register_Unit
+# Loading work.D_flop
+# Loading work.Address_Register
+# Loading work.Instruction_Register
+# Loading work.Program_Counter
+# Loading work.Multiplexer_5ch_8bit
+# Loading work.Multiplexer_5ch_10bit
+# Loading work.Alu_RISC
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v(36): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'address'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(1).
+#         Region: /test_Processing_Unit/process1
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v(36): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'address_decoded'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(1).
+#         Region: /test_Processing_Unit/process1
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(31): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R0
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(32): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R1
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(33): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R2
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(34): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R3
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(37): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Address_Register.v(2).
+#         Region: /test_Processing_Unit/process1/Add_R
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(39): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Program_Counter.v(1).
+#         Region: /test_Processing_Unit/process1/PC
+# Updating msgviewer database...
+run 100
+# Updating msgviewer database...
+restart
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v(36): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'address'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(1).
+#         Region: /test_Processing_Unit/process1
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v(36): [PCDPC] - Port size (8 or 8) does not match connection size (7) for port 'address_decoded'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(1).
+#         Region: /test_Processing_Unit/process1
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(31): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R0
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(32): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R1
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(33): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R2
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(34): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Register_Unit.v(1).
+#         Region: /test_Processing_Unit/process1/R3
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(37): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Address_Register.v(2).
+#         Region: /test_Processing_Unit/process1/Add_R
+# ** Warning: (vsim-3015) D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v(39): [PCDPC] - Port size (8 or 8) does not match connection size (10) for port 'data_in'. The port definition is at: D:/dropbox/HDL Nhan Minh/project/Program_Counter.v(1).
+#         Region: /test_Processing_Unit/process1/PC
+add wave \
+{sim:/test_Processing_Unit/process1/instruction } \
+{sim:/test_Processing_Unit/process1/address } \
+{sim:/test_Processing_Unit/process1/Bus_1a } \
+{sim:/test_Processing_Unit/process1/Bus_1b } \
+{sim:/test_Processing_Unit/process1/Zflag } \
+{sim:/test_Processing_Unit/process1/address_decoded } \
+{sim:/test_Processing_Unit/process1/constant_decoded } \
+{sim:/test_Processing_Unit/process1/mem_word } \
+{sim:/test_Processing_Unit/process1/Load_R0 } \
+{sim:/test_Processing_Unit/process1/Load_R1 } \
+{sim:/test_Processing_Unit/process1/Load_R2 } \
+{sim:/test_Processing_Unit/process1/Load_R3 } \
+{sim:/test_Processing_Unit/process1/Load_PC } \
+{sim:/test_Processing_Unit/process1/Inc_PC } \
+{sim:/test_Processing_Unit/process1/Sel_Bus_1a_Mux } \
+{sim:/test_Processing_Unit/process1/Sel_Bus_1b_Mux } \
+{sim:/test_Processing_Unit/process1/Sel_Bus_2_Mux } \
+{sim:/test_Processing_Unit/process1/Load_IR } \
+{sim:/test_Processing_Unit/process1/Load_Add_R } \
+{sim:/test_Processing_Unit/process1/Load_Reg_Z } \
+{sim:/test_Processing_Unit/process1/clk } \
+{sim:/test_Processing_Unit/process1/rst } \
+{sim:/test_Processing_Unit/process1/R0_out } \
+{sim:/test_Processing_Unit/process1/R1_out } \
+{sim:/test_Processing_Unit/process1/R2_out } \
+{sim:/test_Processing_Unit/process1/R3_out } \
+{sim:/test_Processing_Unit/process1/PC_count } \
+{sim:/test_Processing_Unit/process1/Bus_2 } \
+{sim:/test_Processing_Unit/process1/alu_out } \
+{sim:/test_Processing_Unit/process1/mem_address } \
+{sim:/test_Processing_Unit/process1/alu_zero_flag } \
+{sim:/test_Processing_Unit/process1/opcode } 
+run 100
+# Updating msgviewer database...
+# Compile of test_Memory_Unit.v failed with 1 errors.
+# Compile of test_Memory_Unit.v failed with 1 errors.
+# Compile of test_Memory_Unit.v was successful.
+vsim -voptargs=+acc work.test_Memory_BlockRAM
+# vsim -voptargs=+acc work.test_Memory_BlockRAM 
+# Loading work.test_Memory_BlockRAM
+# Loading work.Clock_Unit
+# Loading work.Memory_Unit
+add wave \
+{sim:/test_Memory_BlockRAM/M2_SRAM/word_size } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory_size } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/address_size } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/data_out } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/data_in } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/address } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/clk } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/write } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory } 
+run 200
+add wave \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[10] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[9] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[8] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[7] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[6] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[5] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[4] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[3] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[2] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[1] } \
+{sim:/test_Memory_BlockRAM/M2_SRAM/memory[0] } 
+# Compile of test_Memory_Unit.v failed with 1 errors.
+# Compile of test_Memory_Unit.v was successful.
+vsim work.test_Memory_Unit
+# vsim work.test_Memory_Unit 
+# Loading work.test_Memory_Unit
+# Loading work.Memory_Unit
+# Updating msgviewer database...
+add wave \
+{sim:/test_Memory_Unit/mem1/word_size } \
+{sim:/test_Memory_Unit/mem1/memory_size } \
+{sim:/test_Memory_Unit/mem1/address_size } \
+{sim:/test_Memory_Unit/mem1/data_out } \
+{sim:/test_Memory_Unit/mem1/data_in } \
+{sim:/test_Memory_Unit/mem1/address } \
+{sim:/test_Memory_Unit/mem1/clk } \
+{sim:/test_Memory_Unit/mem1/write } 
+add wave \
+{sim:/test_Memory_Unit/mem1/memory[10] } \
+{sim:/test_Memory_Unit/mem1/memory[9] } \
+{sim:/test_Memory_Unit/mem1/memory[8] } \
+{sim:/test_Memory_Unit/mem1/memory[7] } \
+{sim:/test_Memory_Unit/mem1/memory[6] } \
+{sim:/test_Memory_Unit/mem1/memory[5] } \
+{sim:/test_Memory_Unit/mem1/memory[4] } \
+{sim:/test_Memory_Unit/mem1/memory[3] } \
+{sim:/test_Memory_Unit/mem1/memory[2] } \
+{sim:/test_Memory_Unit/mem1/memory[1] } \
+{sim:/test_Memory_Unit/mem1/memory[0] } 
+run 100
+# Updating msgviewer database...
+run 200
+# Updating msgviewer database...

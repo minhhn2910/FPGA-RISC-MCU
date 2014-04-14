@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.067 ns
+From           : RISC_SPM:machine|Processing_Unit:M0_Processor|Instruction_Register:IR|data_out[5]
+To             : HEX1[1]
+From Clock     : SW[16]
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'SW[16]'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 92.66 MHz ( period = 10.792 ns )
+From           : RISC_SPM:machine|Processing_Unit:M0_Processor|Instruction_Register:IR|data_out[9]
+To             : RISC_SPM:machine|Processing_Unit:M0_Processor|Instruction_Register:IR|data_out[3]
+From Clock     : SW[16]
+To Clock       : SW[16]
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLOCK_50'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 257.47 MHz ( period = 3.884 ns )
+From           : generator:gen1|count[7]
+To             : generator:gen1|count[14]
+From Clock     : CLOCK_50
+To Clock       : CLOCK_50
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

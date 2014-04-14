@@ -1,0 +1,4 @@
+This project's purpose is to design a RISC MCU by Verilog. The code is sucessfully tested on Altera DE2 Board.
+We also introduce the compiler for our new MCU, written in C.
+
+At this time, the report and project proposal only have the Vietnamese version.

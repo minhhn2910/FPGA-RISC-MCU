@@ -1,0 +1,9 @@
+save 4
+and r0 r0 r1
+save 1
+and r0 r0 r2
+add r2 r0 r2
+sub r1 r0 r1
+siz
+jump 5
+add r2 r2 r2

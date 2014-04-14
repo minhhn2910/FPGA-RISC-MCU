@@ -1,0 +1,445 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Learning 2\INFORMATICS 2\FPGA\thuyet trinh\demo
+vAddress_Register
+Z1 IBeJCNAKfS>oGiG=f:AbYU1
+Z2 V?Gb?^2^^jDb]he5AdEXiR2
+Z3 dD:\dropbox\HDL Nhan Minh\project
+Z4 w1354850513
+Z5 8D:/dropbox/HDL Nhan Minh/project/Address_Register.v
+Z6 FD:/dropbox/HDL Nhan Minh/project/Address_Register.v
+L0 2
+Z7 OV;L;6.6d;45
+r1
+31
+Z8 !s102 -nocovercells
+Z9 o-work work -nocovercells -O0
+Z10 n@address_@register
+Z11 !s100 HP3L8o:c[_;^>m:bP6BmU2
+!s85 0
+!s101 -O0
+vAlu_RISC
+Z12 I[9KBZ?;l;`YnWbIZMBb1X0
+Z13 VA:@R7^K4GXAMENU^KA18h2
+R3
+Z14 w1354786987
+Z15 8D:/dropbox/HDL Nhan Minh/project/Alu_RISC.v
+Z16 FD:/dropbox/HDL Nhan Minh/project/Alu_RISC.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z17 n@alu_@r@i@s@c
+Z18 !s100 bj;YT_gAi:ZX]i3U:8L]i3
+!s85 0
+!s101 -O0
+vClock_Unit
+Z19 IhDzTG?d;O<lkOnAgjJU?P1
+Z20 Va5oEK:`4V]cPZnj];Q`QR2
+R3
+Z21 w1208168480
+Z22 8D:/dropbox/HDL Nhan Minh/project/Clock_Unit .v
+Z23 FD:/dropbox/HDL Nhan Minh/project/Clock_Unit .v
+L0 2
+R7
+r1
+31
+R8
+R9
+Z24 n@clock_@unit
+Z25 !s100 :MjCP`oI>eaP?7kb26_H61
+!s85 0
+!s101 -O0
+vControl_Unit
+Z26 IUgz:P:[?Aaa>I0UTkUWaX0
+Z27 V1_Wc^VlD^Ec?dM2c7k?A]0
+R3
+Z28 w1355037625
+Z29 8D:/dropbox/HDL Nhan Minh/project/Control_Unit.v
+Z30 FD:/dropbox/HDL Nhan Minh/project/Control_Unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z31 n@control_@unit
+Z32 !s100 >eNEHKU]EXamHI^i=e=7]2
+!s85 0
+!s101 -O0
+vD_flop
+Z33 IULD]SVoGaXMP:N6hNT9oa0
+Z34 V=BJEg<9IggeAkP5No=9Z;1
+R3
+Z35 w1208168252
+Z36 8D:/dropbox/HDL Nhan Minh/project/D_flop.v
+Z37 FD:/dropbox/HDL Nhan Minh/project/D_flop.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z38 n@d_flop
+Z39 !s100 PI<bee2Ii]5PRcI][fEcn0
+!s85 0
+!s101 -O0
+vdecoderBCD
+Z40 Im_h^[AVIPf0V21>KV<@?e0
+Z41 V=DhW[5jdE6T:?02NlXZcG0
+R3
+Z42 w1354931224
+Z43 8D:/dropbox/HDL Nhan Minh/project/decoderBCD.v
+Z44 FD:/dropbox/HDL Nhan Minh/project/decoderBCD.v
+L0 3
+R7
+r1
+31
+R8
+R9
+Z45 ndecoder@b@c@d
+Z46 !s100 n99Cm=@gNg^BRcgSKE2oi0
+!s85 0
+!s101 -O0
+vgenerator
+Z47 I^KWHE_JSE20@YgJb=FP2S0
+Z48 VM?A0PiJ[Mc3zlbUNnK<O`0
+R3
+Z49 w1354931296
+Z50 8D:/dropbox/HDL Nhan Minh/project/generator.v
+Z51 FD:/dropbox/HDL Nhan Minh/project/generator.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z52 !s100 lfAR<LE17@`7P]lZH1jiU3
+!s85 0
+!s101 -O0
+vInstruction_Register
+Z53 IZRCCAa4VF4G=nL77=A;;52
+Z54 VZ;^nQ22eaB3<j3a8mUZY30
+R3
+Z55 w1354850435
+Z56 8D:/dropbox/HDL Nhan Minh/project/Instruction_Register.v
+Z57 FD:/dropbox/HDL Nhan Minh/project/Instruction_Register.v
+L0 2
+R7
+r1
+31
+R8
+R9
+Z58 n@instruction_@register
+Z59 !s100 Y[B[POEF]JI4:3Q7g6KF13
+!s85 0
+!s101 -O0
+vMemmory_BlockRAM
+Z60 IVlbl?^[GG^TSz]bYX7dQU0
+Z61 VFDGGOEZPQKSOM814Q`:<;3
+R3
+Z62 w1354956266
+Z63 8D:/dropbox/HDL Nhan Minh/project/Memmory_BlockRAM.v
+Z64 FD:/dropbox/HDL Nhan Minh/project/Memmory_BlockRAM.v
+L0 39
+R7
+r1
+31
+R8
+R9
+Z65 n@memmory_@block@r@a@m
+Z66 !s100 W2elPX750UR`>`fILdWOm0
+!s85 0
+!s101 -O0
+vMemory_Unit
+Z67 IVfIFc3<fof`FgZ`0R6k@^0
+Z68 VjQGmaf[nND^`17ahFSAiT0
+R3
+Z69 w1354935157
+Z70 8D:/dropbox/HDL Nhan Minh/project/Memory_Unit.v
+Z71 FD:/dropbox/HDL Nhan Minh/project/Memory_Unit.v
+L0 2
+R7
+r1
+31
+R8
+R9
+Z72 n@memory_@unit
+Z73 !s100 oChGklH^aM_Qf[VMcW]IV3
+!s85 0
+!s101 -O0
+vMultiplexer_3ch
+Z74 I5ohzHcCIK]TNm33AKf>N_1
+Z75 VG8Y5alLgj4C[Aan1LRQVG1
+R3
+Z76 w1354848123
+Z77 8D:/dropbox/HDL Nhan Minh/project/Multiplexer_3ch.v
+Z78 FD:/dropbox/HDL Nhan Minh/project/Multiplexer_3ch.v
+L0 2
+R7
+r1
+31
+R8
+R9
+Z79 n@multiplexer_3ch
+Z80 !s100 O67[:GnnO>Y7UG`4DMi`E2
+!s85 0
+!s101 -O0
+vMultiplexer_5ch
+Z81 I_6b=eZe<<l>a]RI5hlTU:3
+Z82 VSI40OO[R1>6j6jmmF72H71
+R3
+Z83 w1354872909
+Z84 8D:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_10bit.v
+Z85 FD:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_10bit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z86 n@multiplexer_5ch
+Z87 !s100 ni3>bCYJTIQ>gS2mj04Hg2
+!s85 0
+!s101 -O0
+vMultiplexer_5ch_10bit
+Z88 ISnH9]A:Yf7kn6FUflKWRh1
+Z89 V=3eimXSTbBB[=7IN2U[6g0
+R3
+Z90 w1354874007
+R84
+R85
+L0 1
+R7
+r1
+31
+R8
+R9
+Z91 n@multiplexer_5ch_10bit
+Z92 !s100 TcFg?MV1dXJ2E39BXnaA50
+!s85 0
+!s101 -O0
+vMultiplexer_5ch_8bit
+Z93 IQBCgJi85F`8N`4zXlB:U51
+Z94 V2BReGE31MJ`TZY@A;G1Kd0
+R3
+Z95 w1354874000
+Z96 8D:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_8bit.v
+Z97 FD:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_8bit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z98 n@multiplexer_5ch_8bit
+Z99 !s100 TH]Vh91Z>YH0KVRX3YnE>2
+!s85 0
+!s101 -O0
+vProcessing_Unit
+Z100 Id[X2O4o56=ODz25o@82S]0
+Z101 Vz_lm>^ba3E:=@z8n]35k83
+R3
+Z102 w1354934356
+Z103 8D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v
+Z104 FD:/dropbox/HDL Nhan Minh/project/Processing_Unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z105 n@processing_@unit
+Z106 !s100 cT4DbhW6DWo]OahWHmWd90
+!s85 0
+!s101 -O0
+vProgram_Counter
+Z107 IDB[k0SG4g=MBF]GCaOXGD2
+Z108 Vd@4k_45]6<<n4ka`bcLnU3
+R3
+Z109 w1354850016
+Z110 8D:/dropbox/HDL Nhan Minh/project/Program_Counter.v
+Z111 FD:/dropbox/HDL Nhan Minh/project/Program_Counter.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z112 n@program_@counter
+Z113 !s100 5867R]f?GFe>`?CNVg4i_0
+!s85 0
+!s101 -O0
+vquartus_project
+Z114 Ifn7k6UC`NYda07:MdU_Wf2
+Z115 VI6ooP7lcHnHLSD147KUkZ0
+R3
+Z116 w1354954290
+Z117 8D:/dropbox/HDL Nhan Minh/project/quartus_project.v
+Z118 FD:/dropbox/HDL Nhan Minh/project/quartus_project.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z119 !s100 KIg2aO@oLID[<NAV]>C7]1
+!s85 0
+!s101 -O0
+vRegister_Unit
+Z120 IGa@FVkLiHKik<Q<j1VdhL3
+Z121 Vi3`ze8=:;T=j>24J97A?c2
+R3
+Z122 w1354788477
+Z123 8D:/dropbox/HDL Nhan Minh/project/Register_Unit.v
+Z124 FD:/dropbox/HDL Nhan Minh/project/Register_Unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z125 n@register_@unit
+Z126 !s100 UJ0>O_eL^8TgZNY[PH1;n1
+!s85 0
+!s101 -O0
+vRISC_processor
+Z127 ISSM;<9CDUgc:@=XAhLPE93
+Z128 VZDVDfDzG4mXCeURB_Wc6J3
+R3
+Z129 w1355035497
+Z130 8D:/dropbox/HDL Nhan Minh/project/RISC_processor.v
+Z131 FD:/dropbox/HDL Nhan Minh/project/RISC_processor.v
+L0 3
+R7
+r1
+31
+R8
+R9
+Z132 n@r@i@s@c_processor
+Z133 !s100 efB9m_?mmQQEBUVKjMK1M3
+!s85 0
+!s101 -O0
+vRISC_SPM
+Z134 IUfC`E4QnNKM5o=NRhTNz13
+Z135 Vk:>LlTQ8]EC:l8=U_[=QR3
+R3
+Z136 w1355019092
+Z137 8D:/dropbox/HDL Nhan Minh/project/RISC_SPM.v
+Z138 FD:/dropbox/HDL Nhan Minh/project/RISC_SPM.v
+L0 2
+R7
+r1
+31
+R8
+R9
+Z139 n@r@i@s@c_@s@p@m
+Z140 !s100 nT^j:A=JbV6I=A:7U?US03
+!s85 0
+!s101 -O0
+vtest_ALU
+Z141 I_2JJL1:iSGolTh7AfLCFh1
+Z142 VdMS=FYnU4Go`P3e8bDS780
+R3
+Z143 w1354787021
+Z144 8D:/dropbox/HDL Nhan Minh/project/test_ALU.v
+Z145 FD:/dropbox/HDL Nhan Minh/project/test_ALU.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z146 ntest_@a@l@u
+Z147 !s100 @ZjKi813ez?eozOT0oIn[0
+!s85 0
+!s101 -O0
+vtest_Control_Unit
+Z148 I097PIDic^d2B5?fWb9ON^0
+Z149 VLmbo>b4iT0IkHMgDJ:`FD1
+R3
+Z150 w1354970934
+Z151 8D:/dropbox/HDL Nhan Minh/project/test_Control_Unit.v
+Z152 FD:/dropbox/HDL Nhan Minh/project/test_Control_Unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z153 ntest_@control_@unit
+Z154 !s100 =WenfEnT1]a[HNeN?M6H43
+!s85 0
+!s101 -O0
+vtest_Memory_BlockRAM
+Z155 IATQLCZ9bg4kf3TCe5o2km1
+Z156 VYB]VZNMNjbd^:cLjHUH6@2
+R3
+Z157 w1355042413
+Z158 8D:/dropbox/HDL Nhan Minh/project/test_Memory_BlockRAM.v
+Z159 FD:/dropbox/HDL Nhan Minh/project/test_Memory_BlockRAM.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z160 ntest_@memory_@block@r@a@m
+Z161 !s100 O6TdM@2F9ldh`?LWEh6?P2
+!s85 0
+!s101 -O0
+vtest_Memory_Unit
+!s100 5ioYkSd=lU^J]S9SHECBP1
+I[lIJ;NmzFE_BaB6?HS3<91
+Z162 VFzI];VF3aGz@i30lE?J1c3
+R3
+w1355044056
+Z163 8D:/dropbox/HDL Nhan Minh/project/test_Memory_Unit.v
+Z164 FD:/dropbox/HDL Nhan Minh/project/test_Memory_Unit.v
+L0 1
+R7
+r1
+!s85 0
+31
+!s101 -O0
+R8
+R9
+Z165 ntest_@memory_@unit
+vtest_Processing_Unit
+Z166 I@h:?6_bkkj6225>0_mh`P1
+Z167 VQo8m5FfB_DG;FWOe32fF81
+R3
+Z168 w1354970801
+Z169 8D:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v
+Z170 FD:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v
+L0 1
+R7
+r1
+31
+R8
+R9
+Z171 ntest_@processing_@unit
+Z172 !s100 4M5ZTQhLmQ^Jl]D:e29B40
+!s85 0
+!s101 -O0
+vtest_RISC_SPM
+Z173 IF@gWaPVdWOE1QZ;]DcC9O3
+Z174 VOeOUAkXbVK<D;m]A?1ngA2
+R3
+Z175 w1354981319
+Z176 8D:/dropbox/HDL Nhan Minh/project/test_RISC_SPM.v
+Z177 FD:/dropbox/HDL Nhan Minh/project/test_RISC_SPM.v
+L0 2
+R7
+r1
+31
+R8
+R9
+Z178 ntest_@r@i@s@c_@s@p@m
+Z179 !s100 8]1OE0GfeKVmYakPGg6_51
+!s85 0
+!s101 -O0

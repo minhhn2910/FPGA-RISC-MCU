@@ -1,0 +1,4 @@
+load 2
+add r0 r2 r2
+nop
+nop

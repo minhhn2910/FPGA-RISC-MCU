@@ -1,0 +1,28 @@
+
+-- Clearbox generated Memory Initialization File (.mif)
+
+WIDTH=10;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	[00..FF]	:	0000;
+  00 : 1100000001;		--	// SAVE R0,0		;R0 = 1
+  01 : 0000000001;	--	// ADD R0,R0,R1		;R1 = R0 + R0 = 2
+  02 : 0011000110;	--	// OR R0,R1,R2		;R2 = R0 | R1 = 3
+  03 : 0100000011;	--	// NOT R3			;R3 = ~R0 = 0xfe
+  04 : 0101100000;		--	// NOP
+  05 : 0001100010;	--	// SUB R2,R0,R2		;R2 = R2 - R0   ; decrease R2 until R2=0 zero=1
+  06 : 0101000000;		--	// SIZ				;SKIP IF Zero = 1
+  07 : 0110000101;		--	// JUMP 0x05		;Goto addr=0x05
+  08 : 1001110000;		--	// STORE 0x70		; memory[112] = R0 = 1;
+  09 : 1011110001;		--	// LOAD 0x71		; R0 = memory[113] = 5;  
+  0a : 0110001010; 	--	// JUMP 0x0a		; Jump here
+ 
+ --//  Data block : 0x70 -> 0x7f
+  70 : 0000000010;
+  71 : 0000000101;
+	
+END;

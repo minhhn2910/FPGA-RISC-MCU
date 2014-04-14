@@ -1,0 +1,1325 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+1009
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Processing_Unit
+# storage
+db|RISC_processor.(2).cnf
+db|RISC_processor.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Processing_Unit.v
+1e2d3b48f52e89e6927f13b84a8819a0
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+data_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+address_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+op_size
+4
+PARAMETER_SIGNED_DEC
+DEF
+Sel1_size
+3
+PARAMETER_SIGNED_DEC
+DEF
+Sel2_size
+3
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor
+}
+# macro_sequence
+
+# end
+# entity
+Register_Unit
+# storage
+db|RISC_processor.(3).cnf
+db|RISC_processor.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Register_Unit.v
+d3d11f563c499fcd4edf9322cd727bb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+data_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|Register_Unit:R0
+RISC_SPM:machine|Processing_Unit:M0_Processor|Register_Unit:R1
+RISC_SPM:machine|Processing_Unit:M0_Processor|Register_Unit:R2
+RISC_SPM:machine|Processing_Unit:M0_Processor|Register_Unit:R3
+}
+# macro_sequence
+
+# end
+# entity
+D_flop
+# storage
+db|RISC_processor.(4).cnf
+db|RISC_processor.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+D_flop.v
+96ecf58bee6fe7cb6381cb937437bdb
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|D_flop:Reg_Z
+}
+# macro_sequence
+
+# end
+# entity
+Address_Register
+# storage
+db|RISC_processor.(5).cnf
+db|RISC_processor.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Address_Register.v
+a98ccd93c2172c270c1e1c87a524f6a
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+address_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|Address_Register:Add_R
+}
+# macro_sequence
+
+# end
+# entity
+Instruction_Register
+# storage
+db|RISC_processor.(6).cnf
+db|RISC_processor.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Instruction_Register.v
+2551db5134b3bfac94a296e1ea4982e
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+address_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|Instruction_Register:IR
+}
+# macro_sequence
+
+# end
+# entity
+Program_Counter
+# storage
+db|RISC_processor.(7).cnf
+db|RISC_processor.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Program_Counter.v
+2c1b7c8a4bc59df17e8f6f245af592a4
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+data_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|Program_Counter:PC
+}
+# macro_sequence
+
+# end
+# entity
+Multiplexer_5ch_8bit
+# storage
+db|RISC_processor.(8).cnf
+db|RISC_processor.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Multiplexer_5ch_8bit.v
+b921202b145f9193d397044cb3a654
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+address_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|Multiplexer_5ch_8bit:Mux_1a
+RISC_SPM:machine|Processing_Unit:M0_Processor|Multiplexer_5ch_8bit:Mux_1b
+}
+# macro_sequence
+
+# end
+# entity
+Multiplexer_5ch_10bit
+# storage
+db|RISC_processor.(9).cnf
+db|RISC_processor.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Multiplexer_5ch_10bit.v
+dab5d71bf2475d99d9f65ddc249f7a24
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+address_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|Multiplexer_5ch_10bit:Mux_2
+}
+# macro_sequence
+
+# end
+# entity
+Alu_RISC
+# storage
+db|RISC_processor.(10).cnf
+db|RISC_processor.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Alu_RISC.v
+74211bc5812b5cae6093f3cc949e37e6
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+op_size
+4
+PARAMETER_SIGNED_DEC
+DEF
+data_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+ADD
+0
+PARAMETER_SIGNED_DEC
+DEF
+SUB
+1
+PARAMETER_SIGNED_DEC
+DEF
+AND
+2
+PARAMETER_SIGNED_DEC
+DEF
+OR
+3
+PARAMETER_SIGNED_DEC
+DEF
+NOT
+4
+PARAMETER_SIGNED_DEC
+DEF
+JUMP
+011x
+PARAMETER_UNSIGNED_BIN
+DEF
+STORE
+100x
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+101x
+PARAMETER_UNSIGNED_BIN
+DEF
+SAVE
+11xx
+PARAMETER_UNSIGNED_BIN
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Processing_Unit:M0_Processor|Alu_RISC:ALU
+}
+# macro_sequence
+
+# end
+# entity
+codeMem
+# storage
+db|RISC_processor.(12).cnf
+db|RISC_processor.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+codeMem.v
+f71bebc0a8376a577ec9ab7d108ffead
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+RISC_SPM:machine|codeMem:code1
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram
+# storage
+db|RISC_processor.(13).cnf
+db|RISC_processor.(13).cnf
+# case_insensitive
+# source_file
+c:|altera|81|quartus|libraries|megafunctions|altsyncram.tdf
+428afb9bbf965842aa82c9b05526af
+7
+# user_parameter {
+BYTE_SIZE_BLOCK
+8
+PARAMETER_UNKNOWN
+DEF
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+WIDTH_BYTEENA
+1
+PARAMETER_UNKNOWN
+DEF
+OPERATION_MODE
+SINGLE_PORT
+PARAMETER_UNKNOWN
+USR
+WIDTH_A
+10
+PARAMETER_SIGNED_DEC
+USR
+WIDTHAD_A
+8
+PARAMETER_SIGNED_DEC
+USR
+NUMWORDS_A
+256
+PARAMETER_SIGNED_DEC
+USR
+OUTDATA_REG_A
+UNREGISTERED
+PARAMETER_UNKNOWN
+USR
+ADDRESS_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+USR
+WRCONTROL_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_A
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_B
+1
+PARAMETER_UNKNOWN
+DEF
+WIDTHAD_B
+1
+PARAMETER_UNKNOWN
+DEF
+NUMWORDS_B
+1
+PARAMETER_UNKNOWN
+DEF
+INDATA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_WRADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_REG_B
+UNREGISTERED
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_REG_B
+CLOCK1
+PARAMETER_UNKNOWN
+DEF
+INDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WRCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+ADDRESS_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+OUTDATA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+RDCONTROL_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+BYTEENA_ACLR_B
+NONE
+PARAMETER_UNKNOWN
+DEF
+WIDTH_BYTEENA_A
+1
+PARAMETER_SIGNED_DEC
+USR
+WIDTH_BYTEENA_B
+1
+PARAMETER_UNKNOWN
+DEF
+RAM_BLOCK_TYPE
+M4K
+PARAMETER_UNKNOWN
+USR
+BYTE_SIZE
+8
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_MIXED_PORTS
+DONT_CARE
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_A
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+READ_DURING_WRITE_MODE_PORT_B
+NEW_DATA_NO_NBE_READ
+PARAMETER_UNKNOWN
+DEF
+INIT_FILE
+code.mif
+PARAMETER_UNKNOWN
+USR
+INIT_FILE_LAYOUT
+PORT_A
+PARAMETER_UNKNOWN
+DEF
+MAXIMUM_DEPTH
+0
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_INPUT_A
+BYPASS
+PARAMETER_UNKNOWN
+USR
+CLOCK_ENABLE_INPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_OUTPUT_A
+BYPASS
+PARAMETER_UNKNOWN
+USR
+CLOCK_ENABLE_OUTPUT_B
+NORMAL
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_A
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+CLOCK_ENABLE_CORE_B
+USE_INPUT_CLKEN
+PARAMETER_UNKNOWN
+DEF
+ENABLE_ECC
+FALSE
+PARAMETER_UNKNOWN
+DEF
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+CBXI_PARAMETER
+altsyncram_aje1
+PARAMETER_UNKNOWN
+USR
+}
+# used_port {
+wren_a
+-1
+3
+q_a
+-1
+3
+data_a
+-1
+3
+clock0
+-1
+3
+address_a
+-1
+3
+wren_b
+-1
+1
+addressstall_b
+-1
+1
+addressstall_a
+-1
+1
+aclr1
+-1
+1
+aclr0
+-1
+1
+rden_b
+-1
+2
+rden_a
+-1
+2
+data_b
+-1
+2
+clocken3
+-1
+2
+clocken2
+-1
+2
+clocken1
+-1
+2
+clocken0
+-1
+2
+clock1
+-1
+2
+byteena_b
+-1
+2
+byteena_a
+-1
+2
+address_b
+-1
+2
+}
+# include_file {
+c:|altera|81|quartus|libraries|megafunctions|aglobal81.inc
+ba79644cade9dcbd5df4af72a9b02986
+c:|altera|81|quartus|libraries|megafunctions|a_rdenreg.inc
+60d229340bc3c24acb0a137b4849830
+c:|altera|81|quartus|libraries|megafunctions|altrom.inc
+d4e3a69a331d3a99d3281790d99a1ebd
+c:|altera|81|quartus|libraries|megafunctions|altqpram.inc
+74e08939f96a7ea8e7a4d59a5b01fe7
+c:|altera|81|quartus|libraries|megafunctions|altdpram.inc
+99d442b5b66c88db4daf94d99c6e4e77
+c:|altera|81|quartus|libraries|megafunctions|stratix_ram_block.inc
+2263a3bdfffeb150af977ee13902f70
+c:|altera|81|quartus|libraries|megafunctions|lpm_mux.inc
+c22bfd353214c01495b560fc34e47d79
+c:|altera|81|quartus|libraries|megafunctions|altram.inc
+e66a83eccf6717bed97c99d891ad085
+c:|altera|81|quartus|libraries|megafunctions|lpm_decode.inc
+bd0e2f5e01c1bd360461dceb53d48
+}
+# hierarchies {
+RISC_SPM:machine|codeMem:code1|altsyncram:altsyncram_component
+}
+# macro_sequence
+
+# end
+# entity
+generator
+# storage
+db|RISC_processor.(15).cnf
+db|RISC_processor.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+generator.v
+4f75bc407bcf45a66a6ccf5ca87da0
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+generator:gen1
+}
+# macro_sequence
+
+# end
+# entity
+decoderBCD
+# storage
+db|RISC_processor.(16).cnf
+db|RISC_processor.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+decoderBCD.v
+3e675ccfc5243e9afaacb8436ca5c46
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+decoderBCD:R0_L
+decoderBCD:R0_H
+decoderBCD:R1_L
+decoderBCD:R1_H
+decoderBCD:R2_L
+decoderBCD:R2_H
+decoderBCD:R3_L
+decoderBCD:R3_H
+}
+# macro_sequence
+
+# end
+# entity
+RISC_processor
+# storage
+db|RISC_processor.(0).cnf
+db|RISC_processor.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+RISC_processor.v
+862b6340c7a29b294ddda86fbe5d8a84
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+data_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+RISC_SPM
+# storage
+db|RISC_processor.(1).cnf
+db|RISC_processor.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+RISC_SPM.v
+764c642edbbd45d21af11272b1bac71f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+data_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+address_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+Sel1_size
+3
+PARAMETER_SIGNED_DEC
+DEF
+Sel2_size
+3
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine
+}
+# macro_sequence
+
+# end
+# entity
+Control_Unit
+# storage
+db|RISC_processor.(11).cnf
+db|RISC_processor.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Control_Unit.v
+fe253de1a1d2dfc277073bc6069a866
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+word_size
+10
+PARAMETER_SIGNED_DEC
+DEF
+op_size
+4
+PARAMETER_SIGNED_DEC
+DEF
+state_size
+4
+PARAMETER_SIGNED_DEC
+DEF
+address_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+data_size
+8
+PARAMETER_SIGNED_DEC
+DEF
+src0_size
+2
+PARAMETER_SIGNED_DEC
+DEF
+src1_size
+2
+PARAMETER_SIGNED_DEC
+DEF
+dest_size
+2
+PARAMETER_SIGNED_DEC
+DEF
+Sel1_size
+3
+PARAMETER_SIGNED_DEC
+DEF
+Sel2_size
+3
+PARAMETER_SIGNED_DEC
+DEF
+S_idle
+0
+PARAMETER_SIGNED_DEC
+DEF
+S_fet1
+1
+PARAMETER_SIGNED_DEC
+DEF
+S_fet2
+2
+PARAMETER_SIGNED_DEC
+DEF
+S_fet3
+3
+PARAMETER_SIGNED_DEC
+DEF
+S_rd1
+4
+PARAMETER_SIGNED_DEC
+DEF
+S_rd2
+5
+PARAMETER_SIGNED_DEC
+DEF
+S_wr1
+6
+PARAMETER_SIGNED_DEC
+DEF
+S_wr2
+7
+PARAMETER_SIGNED_DEC
+DEF
+S_jump1
+8
+PARAMETER_SIGNED_DEC
+DEF
+S_jump2
+9
+PARAMETER_SIGNED_DEC
+DEF
+S_wait
+10
+PARAMETER_SIGNED_DEC
+DEF
+S_unused
+11
+PARAMETER_SIGNED_DEC
+DEF
+S_nop
+12
+PARAMETER_SIGNED_DEC
+DEF
+S_dec
+13
+PARAMETER_SIGNED_DEC
+DEF
+S_ex1
+14
+PARAMETER_SIGNED_DEC
+DEF
+S_halt
+15
+PARAMETER_SIGNED_DEC
+DEF
+ADD
+0
+PARAMETER_SIGNED_DEC
+DEF
+SUB
+1
+PARAMETER_SIGNED_DEC
+DEF
+AND
+2
+PARAMETER_SIGNED_DEC
+DEF
+OR
+3
+PARAMETER_SIGNED_DEC
+DEF
+NOT
+4
+PARAMETER_SIGNED_DEC
+DEF
+SIZ
+01010
+PARAMETER_UNSIGNED_BIN
+DEF
+NOP
+01011
+PARAMETER_UNSIGNED_BIN
+DEF
+OP_5
+0101
+PARAMETER_UNSIGNED_BIN
+DEF
+JUMP
+011x
+PARAMETER_UNSIGNED_BIN
+DEF
+STORE
+100x
+PARAMETER_UNSIGNED_BIN
+DEF
+LOAD
+101x
+PARAMETER_UNSIGNED_BIN
+DEF
+SAVE
+11xx
+PARAMETER_UNSIGNED_BIN
+DEF
+R0
+0
+PARAMETER_SIGNED_DEC
+DEF
+R1
+1
+PARAMETER_SIGNED_DEC
+DEF
+R2
+2
+PARAMETER_SIGNED_DEC
+DEF
+R3
+3
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+RISC_SPM:machine|Control_Unit:M1_Controller
+}
+# macro_sequence
+
+# end
+# entity
+altsyncram_aje1
+# storage
+db|RISC_processor.(14).cnf
+db|RISC_processor.(14).cnf
+# case_insensitive
+# source_file
+db|altsyncram_aje1.tdf
+1a884cefc533f09548ecb7ec4ad9c43
+7
+# used_port {
+wren_a
+-1
+3
+q_a9
+-1
+3
+q_a8
+-1
+3
+q_a7
+-1
+3
+q_a6
+-1
+3
+q_a5
+-1
+3
+q_a4
+-1
+3
+q_a3
+-1
+3
+q_a2
+-1
+3
+q_a1
+-1
+3
+q_a0
+-1
+3
+data_a9
+-1
+3
+data_a8
+-1
+3
+data_a7
+-1
+3
+data_a6
+-1
+3
+data_a5
+-1
+3
+data_a4
+-1
+3
+data_a3
+-1
+3
+data_a2
+-1
+3
+data_a1
+-1
+3
+data_a0
+-1
+3
+clock0
+-1
+3
+address_a7
+-1
+3
+address_a6
+-1
+3
+address_a5
+-1
+3
+address_a4
+-1
+3
+address_a3
+-1
+3
+address_a2
+-1
+3
+address_a1
+-1
+3
+address_a0
+-1
+3
+}
+# memory_file {
+code.mif
+c337d1227e6dccaec6ac413733c54a
+}
+# hierarchies {
+RISC_SPM:machine|codeMem:code1|altsyncram:altsyncram_component|altsyncram_aje1:auto_generated
+}
+# macro_sequence
+
+# end
+# complete
+

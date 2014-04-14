@@ -1,0 +1,5 @@
+save 5
+store 10
+add r0 r0 r0
+load 10
+add r2 r0 r2

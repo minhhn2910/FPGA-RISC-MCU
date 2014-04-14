@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Dec 10 17:04:08 2012
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : RISC_processor
+Top-level Entity Name : RISC_processor
+Family : Cyclone II
+Total logic elements : 282
+    Total combinational functions : 282
+    Dedicated logic registers : 98
+Total registers : 98
+Total pins : 81
+Total virtual pins : 0
+Total memory bits : 2,560
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

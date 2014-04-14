@@ -1,0 +1,169 @@
+{D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Processing_Unit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Processing_Unit
+
+Top level modules:
+	Processing_Unit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/D_flop.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/D_flop.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module D_flop
+
+Top level modules:
+	D_flop
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Instruction_Register.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Instruction_Register.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Instruction_Register
+
+Top level modules:
+	Instruction_Register
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/test_Control_Unit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/test_Control_Unit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module test_Control_Unit
+
+Top level modules:
+	test_Control_Unit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Program_Counter.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Program_Counter.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Program_Counter
+
+Top level modules:
+	Program_Counter
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/decoderBCD.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/decoderBCD.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module decoderBCD
+
+Top level modules:
+	decoderBCD
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/RISC_SPM.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/RISC_SPM.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module RISC_SPM
+
+Top level modules:
+	RISC_SPM
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_8bit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_8bit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Multiplexer_5ch_8bit
+
+Top level modules:
+	Multiplexer_5ch_8bit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Multiplexer_3ch.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Multiplexer_3ch.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Multiplexer_3ch
+
+Top level modules:
+	Multiplexer_3ch
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Memory_Unit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Memory_Unit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Memory_Unit
+
+Top level modules:
+	Memory_Unit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/test_ALU.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/test_ALU.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module test_ALU
+
+Top level modules:
+	test_ALU
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_10bit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Multiplexer_5ch_10bit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Multiplexer_5ch_10bit
+
+Top level modules:
+	Multiplexer_5ch_10bit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/test_Memory_BlockRAM.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/test_Memory_BlockRAM.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module test_Memory_BlockRAM
+
+Top level modules:
+	test_Memory_BlockRAM
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Register_Unit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Register_Unit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Register_Unit
+
+Top level modules:
+	Register_Unit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/test_RISC_SPM.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/test_RISC_SPM.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module test_RISC_SPM
+
+Top level modules:
+	test_RISC_SPM
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/generator.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/generator.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module generator
+
+Top level modules:
+	generator
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/RISC_processor.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/RISC_processor.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module RISC_processor
+
+Top level modules:
+	RISC_processor
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Control_Unit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Control_Unit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Memmory_BlockRAM.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Memmory_BlockRAM.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Memmory_BlockRAM
+
+Top level modules:
+	Memmory_BlockRAM
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Address_Register.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Address_Register.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Address_Register
+
+Top level modules:
+	Address_Register
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Alu_RISC.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Alu_RISC.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Alu_RISC
+
+Top level modules:
+	Alu_RISC
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/test_Processing_Unit.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module test_Processing_Unit
+
+Top level modules:
+	test_Processing_Unit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/Clock_Unit .v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/Clock_Unit .v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module Clock_Unit
+
+Top level modules:
+	Clock_Unit
+
+} {} {}} {D:/dropbox/HDL Nhan Minh/project/quartus_project.v} {1 {vlog -work work -nocovercells {D:/dropbox/HDL Nhan Minh/project/quartus_project.v}
+Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+-- Compiling module quartus_project
+
+Top level modules:
+	quartus_project
+
+} {} {}}

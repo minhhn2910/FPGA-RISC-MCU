@@ -1,0 +1,12 @@
+save 1
+store 110
+add r0 r0 r1
+jump 5
+jump 6
+add r1 r2 r2
+save 2
+load 110
+sub r2 r0 r2
+siz
+jump 7
+add r0 r3 r3
